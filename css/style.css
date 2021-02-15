@@ -1,0 +1,15 @@
+main h1 {
+  color: crimson;
+}
+
+main h2 {
+  background-color: darkcyan;
+  padding: 30px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 800px;
+}
+
