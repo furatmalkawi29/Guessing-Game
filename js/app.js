@@ -11,9 +11,6 @@ alert ( 'Welcome ' + inputName + '!' );
 
 
 
-git remote set-url origin https://github.com/furatmalkawi29/Guessing-Game.git
-
-
 // Guessing Game:
 //Q1
 
