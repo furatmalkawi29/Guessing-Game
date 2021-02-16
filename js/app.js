@@ -179,8 +179,6 @@ let numberInput = prompt ('Lets PLAY! | Guess What Number I Have In My Head ! ' 
   }  
 }
 
-//---------------------
-
 if (numberInput != 5 ) // Doesnt Equal 5 alert
 {
   alert ('You didnt Guess! Its : 5'); 
@@ -194,43 +192,6 @@ if (numberInput != 5 ) // Doesnt Equal 5 alert
 //Q7
 
 let arrChocolate =['galaxy','snickers','twix'];
-
-/*let answer = prompt ('Whats My favorite chocolate?' , 'Galaxy').toLowerCase ();
-
-let check = false;
-
-for (let i=0; i<5 ;i++)
-{ check= false;
-
-
-  for (let i=0; i<3 ;i++) //move inside array ---> if answer exist ---> check = true 
-  {
-    if (answer == arrChocolate[i])
-    {
-      check = true;
-    }
-  }
-
-
-  if (check== true) // if answer exists ----> alert choices 
-  {
-    alert ('CONGRAGULATIONS!! You Guessed! MY Favorites are : Galaxy, Mars, Twix '); 
-    score = score + 1;
-    break;  
-  } else {
-    answer = prompt ('Try Again!' , 'Galaxy').toLowerCase (); // Another Attemp
-  }
-} 
-
-if (answer != arrChocolate[0] && answer != arrChocolate[1] && answer != arrChocolate[2] )
-{
-alert ('You Didnt Guess Right! MY Favorites are : Galaxy, Mars, Twix '); //Out of attempts answer
- 
-}
-
-
-
-*/
 
 let answer ;
 
