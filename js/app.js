@@ -156,28 +156,36 @@ else if (sweetTooth==='n'|| sweetTooth==='no') // check if answer is no or n
 //-------------------------------------------------------------------------------
 
 //Q6 (Number)
-let numberInput = prompt ('Lets PLAY! | Guess What Number I Have In My Head ! ' , '5')
+let numberInput = prompt ('Lets PLAY! | Guess What Number I Have In My Head ! ' , '5');
 
-for (let i=0 ; i< 3 ;i++) // 4 attempts
-{
 
-  if (numberInput == 5)
+  if (numberInput == 5) // Equal 5 alert
   {
-    alert ('CONGRAGULATIONS!! You Guessed! Its : 5'); // Equal 5
+    alert ('CONGRAGULATIONS!! You Guessed! Its : 5');
     score = score + 1;
-    break;
+  }
+  
+  //-----------------
 
-  } else if ( numberInput > 5)  // Bigger than 5
+  for (let i=0 ; i< 3 ;i++) // 4 attempts (4 prompts)
+{
+  if ( numberInput > 5)  // Bigger than 5
   {
     numberInput = prompt ('TRY AGAIN : Too High!' , '5');
     
   } else if ( numberInput < 5)  //less Than 5
   {
     numberInput = prompt ('TRY AGAIN : Too Low!' , '5');
-  } 
-  
+  }  
 }
 
+//---------------------
+
+if (numberInput != 5 ) // Doesnt Equal 5 alert
+{
+  alert ('You didnt Guess! Its : 5'); 
+
+}
 
 
 
@@ -186,25 +194,29 @@ for (let i=0 ; i< 3 ;i++) // 4 attempts
 //Q7
 
 let arrChocolate =['galaxy','snickers','twix'];
-let answer = prompt ('Whats My favorite chocolate?' , 'Galaxy').toLowerCase ();
+
+/*let answer = prompt ('Whats My favorite chocolate?' , 'Galaxy').toLowerCase ();
+
 let check = false;
 
 for (let i=0; i<5 ;i++)
 { check= false;
-  for (let i=0; i<3 ;i++)
+
+
+  for (let i=0; i<3 ;i++) //move inside array ---> if answer exist ---> check = true 
   {
     if (answer == arrChocolate[i])
     {
       check = true;
     }
-  
   }
-  if (check== true)
+
+
+  if (check== true) // if answer exists ----> alert choices 
   {
-    alert ('CONGRAGULATIONS!! You Guessed! MY Favorites are : Galaxy, Mars, Twix '); // Right answer
+    alert ('CONGRAGULATIONS!! You Guessed! MY Favorites are : Galaxy, Mars, Twix '); 
     score = score + 1;
-    break;
-    
+    break;  
   } else {
     answer = prompt ('Try Again!' , 'Galaxy').toLowerCase (); // Another Attemp
   }
@@ -218,9 +230,50 @@ alert ('You Didnt Guess Right! MY Favorites are : Galaxy, Mars, Twix '); //Out o
 
 
 
+*/
+
+let answer ;
+
+function successful () 
+{
+for (let i=0; i<3 ;i++) //move inside array ---> if answer exist ---> alert choices 
+  {
+    if (answer == arrChocolate[i])
+    {
+      alert ('CONGRAGULATIONS!! You Guessed! MY Favorites are : Galaxy, Mars, Twix '); 
+      score = score + 1;
+      return 1 ;
+      break;    // get outside for --> to show alert one time 
+    }
+  }
+}
+
+//-----------------------------------------
+
+successful (); // first attempt (1 promt)
+
+let returnValue = 0;
+
+  if (!returnValue) // excute ---> if successful didnt return 1 (if answer still wrong)
+{
+  for (let i=0; i<6 ;i++) // (5 more prompt)
+  { 
+    if (answer != arrChocolate[0] && answer != arrChocolate[1] && answer != arrChocolate[2]) // excute is answer is wrong
+    {
+    answer = prompt ('Whats My favorite chocolate?' , 'Galaxy').toLowerCase (); 
+    returnValue = successful(); // excute function 
+    }
+  } 
+}
+
+if (answer != arrChocolate[0] && answer != arrChocolate[1] && answer != arrChocolate[2] ) // if answer still wrong after attempts
+{
+alert ('You Didnt Guess Right! MY Favorites are : Galaxy, Mars, Twix '); // ---> alert answer
+ 
+}
+
+
+
 //SCORE -----------------------------------------------------------------------------------------
 
-alert ('YOUR SCORE IS  :' + score + '/ 7' ); //score
-
-
-
+alert ('YOUR SCORE IS  :' + score + '/ 7' ); //score 
