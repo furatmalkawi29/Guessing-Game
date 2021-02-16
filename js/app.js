@@ -142,7 +142,7 @@ alert ('You Didnt Guess Right! MY Favorites are : Galaxy, Mars, Twix '); //Out o
 }
 
 
-alert ('YOUR SCORE IS  :' + score + '/ 7' );
+alert ('YOUR SCORE IS  :' + score + '/ 7' ); //score
 
 
 
