@@ -16,6 +16,10 @@ alert ( 'Welcome ' + inputName + '!' );
 
   let photography = prompt ('Do I Enjoy Photography? (y/n) or (yes/no)' , 'y' ).toLowerCase(); //get input
 
+
+   const q1Function  = function (photographyvalue){
+   photography = photographyvalue.toLowerCase();
+
     while (photography !== 'n' && photography !== 'no' && photography !=='yes' && photography !== 'y' ) 
     { // check input //run only in one case: all statements : false -----> input != y, yes, n, no 
       photography = prompt ('Error: Enter (y/n) or (yes/no)', 'y' ).toLowerCase(); // keep asking for input
@@ -33,7 +37,9 @@ alert ( 'Welcome ' + inputName + '!' );
     {
       alert ('Wrong Answer! NO, I Enjoy Photography? ');
     }
-    
+    }
+
+    q1Function(photography);
   
 
 
