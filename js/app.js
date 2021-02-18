@@ -42,8 +42,8 @@ const q1Function  = function ( photographyvalue )
   }
 }
 
-q1Function( photography );
-*/  
+q1Function( photography ); */
+
 
 let photography = prompt ( 'Do I Enjoy Photography? (y/n) or (yes/no)' , 'y' ).toLowerCase(); //get input
 
