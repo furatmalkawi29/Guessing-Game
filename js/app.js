@@ -168,7 +168,7 @@ for (let i=0 ; i< 4 ;i++) // 4 attempts (4 prompts)
   {
     alert ('TRY AGAIN : Too Low!');
   }
-  if (numberInput == 5 ) // Equal 5
+  if (numberInput === 5 ) // Equal 5
   {
     alert ('You Guessed right! Its : 5');
     score =score+1;
@@ -238,5 +238,4 @@ if (answer !== arrChocolate[0] && answer !== arrChocolate[1] && answer !== arrCh
 
 
 //SCORE -----------------------------------------------------------------------------------------
-
-alert ('YOUR SCORE IS  :' + score + '/ 7' ); //score
+alert ('YOUR SCORE IS  :' + score + '/ 7' ); //score 
