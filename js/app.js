@@ -239,4 +239,4 @@ if (answer !== arrChocolate[0] && answer !== arrChocolate[1] && answer !== arrCh
 
 //SCORE -----------------------------------------------------------------------------------------
 
-alert ('YOUR SCORE IS  :\' + score + \'/ 7' ); //score
+alert ('YOUR SCORE IS  :' + score + '/ 7' ); //score

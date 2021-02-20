@@ -1,45 +1,4 @@
 
-/*h1 
-{
-    background-color: rgb(103,116,255);
-    padding: 10px;
-}
-.bio {
-width: 100px;
-margin: 0px;
-padding: 0px;
-display: inline;
-background-color: rgb(63, 206, 224);
-}
-
-
-
-body {
-  background-image: url(../img/back2.jpg);
-}
-
-.cont {
-    background-color: white;
-    box-shadow: 10px 10px 5px #464646;
-    padding: 50px;
-    margin: 50px auto;
-    width: 80%;
-    height: 90%;
-    border-radius: 30px;
-}
-
-.welcome
-{
-    width:45%;
-    text-align: right;
-}
-
-ol,ul {
-    font-size: 30px;
-}
-
-*/
-
 body {
     margin: 0px; 
     background-image: url("../img/b1.jpg");
